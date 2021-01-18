@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts 'deleting Records'
+Content.delete_all
+
+puts 'creating Records'
+
+Content.create!(publication: "Second Suns",
+person: "Leander Nowack",
+keyword: "design",
+place: "Weimar",
+question: "Do you believe in ghosts?")
+
+puts 'finished'

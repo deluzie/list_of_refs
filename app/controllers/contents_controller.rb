@@ -1,11 +1,11 @@
-class ContentController < ApplicationController
+class ContentsController < ApplicationController
   def show
     @content = Content.find(params[:id])
   end
 
-  def random_content
-    @content = Content.sample
-  end
+  # def random_content
+  #   @content = Content.sample
+  # end
 
   def new
     @content = Content.new
@@ -14,7 +14,7 @@ class ContentController < ApplicationController
   def create
     @content = Content.new(content_params)
     if @content.save
-      redirect_to content_path(@content)
+      redirect_to @content
     else
       render :new
     end
@@ -23,6 +23,6 @@ class ContentController < ApplicationController
   private
 
   def content_params
-    params.require(:content).permit(:description)
+    params.require(:content).permit(:publication, :person, :keyword, :place, :question)
   end
 end
