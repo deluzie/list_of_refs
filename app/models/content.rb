@@ -1,3 +1,3 @@
 class Content < ApplicationRecord
-  validates :publication, :person, :keyword, :place, :question, presence: true
+  #validates :publication, :person, :keyword, :place, :question, presence: true
 end

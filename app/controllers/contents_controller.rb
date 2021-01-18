@@ -3,10 +3,6 @@ class ContentsController < ApplicationController
     @content = Content.find(params[:id])
   end
 
-  # def random_content
-  #   @content = Content.sample
-  # end
-
   def new
     @content = Content.new
   end
