@@ -1,0 +1,13 @@
+<div>
+  <h2>Create a new Cocktail</h2>
+  <%= simple_form_for (@cocktail) do |f| %>
+    <%= f.input :name %>
+    <label class="btn">
+    ( optional: add an image )
+    <span style="display:none;">
+    <%= f.input :photo, as: :file, name: 'Upload image' %>
+    </span>
+    </label>
+    <%= f.submit "Add cocktail !", class: "btn btn-primary" %>
+  <% end %>
+</div>
