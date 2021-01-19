@@ -1,6 +1,14 @@
 class ContentsController < ApplicationController
   def show
-    @content = Content.find(params[:id])
+    # content_ids = Content.where("
+    #   SELECT *
+    #   FROM contents
+    #   WHERE id < (SELECT MAX(id) FROM Contents)
+    # ")
+
+    # @content.id = content_ids.sample
+    # @content = Content.find(@content_id)
+    @content = Content.find(Content.pluck(:id).sample)
   end
 
   def new
