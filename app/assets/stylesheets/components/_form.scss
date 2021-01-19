@@ -15,7 +15,6 @@ textarea {
 
 .form-input-field {
   width: 20%;
-  padding: 5px;
 
   #content_publication::placeholder {
     color: blue;
@@ -25,8 +24,8 @@ textarea {
     width: 100%;
     padding: 3px 6px 3px 6px;
     color: blue;
-    border: 1px solid #9f9e9a;
-    box-shadow: 2px 3px 2px #9f9e9a;
+    border: 1px solid black;
+    border-right: none;
     resize: none !important;
   }
   #content_publication:focus {
@@ -42,8 +41,8 @@ textarea {
     width: 100%;
     padding: 3px 6px 3px 6px;
     color: #e8e815;
-    border: 1px solid #9f9e9a;
-    box-shadow: 2px 3px 2px #9f9e9a;
+    border: 1px solid black;
+    border-right: none;
     resize: none !important;
   }
    #content_person:focus {
@@ -59,8 +58,8 @@ textarea {
     width: 100%;
     padding: 3px 6px 3px 6px;
     color: red;
-    border: 1px solid #9f9e9a;
-    box-shadow: 2px 3px 2px #9f9e9a;
+    border: 1px solid black;
+    border-right: none;
     resize: none !important;
   }
   #content_keyword:focus {
@@ -77,8 +76,8 @@ textarea {
     width: 100%;
     padding: 3px 6px 3px 6px;
     color: rgb(0, 200, 0);
-    border: 1px solid #9f9e9a;
-    box-shadow: 2px 3px 2px #9f9e9a;
+    border: 1px solid black;
+    border-right: none;
     resize: none !important;
   }
   #content_place:focus {
@@ -95,8 +94,7 @@ textarea {
     width: 100%;
     padding: 3px 6px 3px 6px;
     color: rgb(0, 0, 0);
-    border: 1px solid #9f9e9a;
-    box-shadow: 2px 3px 2px #9f9e9a;
+    border: 1px solid rgb(0, 0, 0);
     resize: none !important;
   }
   #content_question:focus {
@@ -105,12 +103,14 @@ textarea {
   }
 }
 
-#form-submit-field {
-  padding: 5px;
-}
-
-.btn-submit {
-  background-color: white !important;
+#btn-submit input {
+  position: relative;
+  top: -1px;
+  float: right;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  border-top: none;
 }
 
 

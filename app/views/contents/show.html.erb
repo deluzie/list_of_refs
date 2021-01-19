@@ -1,9 +1,17 @@
-<ul class="list-unstyled">
-    <li>
-      <span><%= @content.publication %></span>
-      <span><%= @content.person %></span>
-      <span><%= @content.keyword %></span>
-      <span><%= @content.place %></span>
-      <span><%= @content.question %></span>
-    </li>
+<ul class="content-wrapper">
+  <li class="content-publications">
+    <%= @content.publication %>
+  </li>
+  <li class="content-people">
+    <%= @content.person %>
+  </li>
+  <li class="content-keywords">
+    <%= @content.keyword %>
+  </li>
+  <li class="content-places">
+    <%= @content.place %>
+  </li>
+  <li class="content-questions">
+    <%= @content.question %>
+  </li>
 </ul>
