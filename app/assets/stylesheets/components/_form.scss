@@ -47,7 +47,7 @@ textarea {
   }
    #content_person:focus {
     background-color: #e8e815;
-    color: white;
+    color: black;
   }
 
   #content_keyword::placeholder {
@@ -86,19 +86,19 @@ textarea {
   }
 
   #content_question::placeholder {
-    color: rgb(0, 0, 0);
+    color: #e358f7;
     opacity: 1;
   }
 
   #content_question {
     width: 100%;
     padding: 3px 6px 3px 6px;
-    color: rgb(0, 0, 0);
+    color: #e358f7;
     border: 1px solid rgb(0, 0, 0);
     resize: none !important;
   }
   #content_question:focus {
-    background-color: rgb(0, 0, 0);
+    background-color: #e358f7;
     color: white;
   }
 }
