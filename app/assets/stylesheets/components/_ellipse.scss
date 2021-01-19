@@ -9,10 +9,9 @@
 }
 
 .ellipse {
-
   display: flex;
-  width: 90%;
-  height: 80%;
+  width: 104%;
+  height: 94%;
   padding: 24px;
   margin: 0px;
   justify-content: center;
@@ -42,15 +41,15 @@
   h1 {
     margin: 0;
     text-decoration: none;
-    color: black;
+    color: white;
     color: transparent;
-    text-shadow: #111 0 0 15px;
+    text-shadow: white 0 0 15px;
     transition: 0.4s;
   }
 
   :hover {
     text-decoration: none !important;
-    color: #111;
+    color: white;
     text-shadow: none;
   }
 }
