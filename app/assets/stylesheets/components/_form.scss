@@ -1,0 +1,117 @@
+textarea:focus {
+  outline: none !important;
+}
+
+.form-wrapper {
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+textarea {
+  min-height: 1em;
+  max-height: 50vh;
+}
+
+.form-input-field {
+  width: 20%;
+  padding: 5px;
+
+  #content_publication::placeholder {
+    color: blue;
+    opacity: 1;
+  }
+  #content_publication {
+    width: 100%;
+    padding: 3px 6px 3px 6px;
+    color: blue;
+    border: 1px solid #9f9e9a;
+    box-shadow: 2px 3px 2px #9f9e9a;
+    resize: none !important;
+  }
+  #content_publication:focus {
+    background-color: blue;
+    color: white;
+  }
+
+  #content_person::placeholder {
+      color: #e8e815;
+      opacity: 1;
+    }
+  #content_person {
+    width: 100%;
+    padding: 3px 6px 3px 6px;
+    color: #e8e815;
+    border: 1px solid #9f9e9a;
+    box-shadow: 2px 3px 2px #9f9e9a;
+    resize: none !important;
+  }
+   #content_person:focus {
+    background-color: #e8e815;
+    color: white;
+  }
+
+  #content_keyword::placeholder {
+    color: red;
+    opacity: 1;
+  }
+  #content_keyword {
+    width: 100%;
+    padding: 3px 6px 3px 6px;
+    color: red;
+    border: 1px solid #9f9e9a;
+    box-shadow: 2px 3px 2px #9f9e9a;
+    resize: none !important;
+  }
+  #content_keyword:focus {
+    background-color: red;
+    color: white;
+  }
+
+
+  #content_place::placeholder {
+    color: rgb(0, 200, 0);
+    opacity: 1;
+  }
+  #content_place {
+    width: 100%;
+    padding: 3px 6px 3px 6px;
+    color: rgb(0, 200, 0);
+    border: 1px solid #9f9e9a;
+    box-shadow: 2px 3px 2px #9f9e9a;
+    resize: none !important;
+  }
+  #content_place:focus {
+    background-color: rgb(0, 200, 0);
+    color: white;
+  }
+
+  #content_question::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 1;
+  }
+
+  #content_question {
+    width: 100%;
+    padding: 3px 6px 3px 6px;
+    color: rgb(0, 0, 0);
+    border: 1px solid #9f9e9a;
+    box-shadow: 2px 3px 2px #9f9e9a;
+    resize: none !important;
+  }
+  #content_question:focus {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+}
+
+#form-submit-field {
+  padding: 5px;
+}
+
+.btn-submit {
+  background-color: white !important;
+}
+
+
+

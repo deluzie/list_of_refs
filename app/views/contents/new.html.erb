@@ -1,8 +1,22 @@
-<%= simple_form_for @content do |f| %>
-  <%= f.input :publication %>
-  <%= f.input :person %>
-  <%= f.input :keyword %>
-  <%= f.input :place %>
-  <%= f.input :question %>
-  <%= f.submit "Save"%>
+<%= simple_form_for @content, html: {class: 'general_content'} do |f| %>
+  <div class="form-wrapper">
+    <div class="form-input-field publication input-sizer">
+      <%= f.text_area :publication, label: false, placeholder: 'Publications', error: 'Try to think of at least one publication'%>
+    </div>
+    <div class="form-input-field person">
+      <%= f.text_area :person, label: false, placeholder: 'People', error: 'Try to think of at least one person' %>
+    </div>
+    <div class="form-input-field keyword">
+      <%= f.text_area :keyword, label: false, placeholder: 'Topics', error: 'Try to think of at least one keyword' %>
+    </div>
+    <div class="form-input-field place">
+      <%= f.text_area :place, label: false, placeholder: 'Places', error: 'Try to think of at least one place' %>
+    </div>
+    <div class="form-input-field question">
+      <%= f.text_area :question, label: false, placeholder: 'Questions', error: 'Try to ask at least one question' %>
+    </div>
+    <div id="form-submit-field">
+      <%= f.submit "Submit", html: "class: btn-submit" %>
+    </div>
+  </div>
 <% end %>
