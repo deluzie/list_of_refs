@@ -1,0 +1,60 @@
+.ellipse-container {
+  display: flex;
+  justify-content: center;
+}
+
+.ellipse.full-width {
+  width: 100vw;
+  height: 100vh;
+}
+
+.ellipse {
+  border: 1px solid black;
+  display: flex;
+  width: 90%;
+  height: 80%;
+  padding: 24px;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: #e8e815;
+  align-self: center;
+}
+
+#red {
+  background-color: red;
+}
+
+#green {
+  background-color: rgb(0, 200, 0);
+}
+
+#purple {
+  background-color: #e358f7;
+  padding: 16px;
+  h1 {
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    color: transparent;
+    text-shadow: #111 0 0 15px;
+    transition: 0.4s;
+  }
+
+  :hover {
+    text-decoration: none !important;
+    color: #111;
+    text-shadow: none;
+  }
+}
+
+.background {
+  background-color: #e358f7;
+}
