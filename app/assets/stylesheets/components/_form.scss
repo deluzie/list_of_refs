@@ -28,6 +28,16 @@ textarea {
     border-right: none;
     resize: none !important;
   }
+
+  #content_publication:hover {
+    background-color: blue;
+    transition: 0.5s;
+  }
+
+  #content_publication:hover::placeholder {
+    color: white;
+  }
+
   #content_publication:focus {
     background-color: blue;
     color: white;
@@ -43,8 +53,19 @@ textarea {
     color: #e8e815;
     border: 1px solid black;
     border-right: none;
+    border-left: none;
     resize: none !important;
   }
+
+  #content_person:hover {
+    background-color: #e8e815;
+    transition: 0.5s;
+  }
+
+  #content_person:hover::placeholder {
+    color: black;
+  }
+
    #content_person:focus {
     background-color: #e8e815;
     color: black;
@@ -60,8 +81,19 @@ textarea {
     color: red;
     border: 1px solid black;
     border-right: none;
+    border-left: none;
     resize: none !important;
   }
+
+  #content_keyword:hover {
+    background-color: red;
+    transition: 0.5s;
+  }
+
+  #content_keyword:hover::placeholder {
+    color: white;
+  }
+
   #content_keyword:focus {
     background-color: red;
     color: white;
@@ -78,8 +110,19 @@ textarea {
     color: rgb(0, 200, 0);
     border: 1px solid black;
     border-right: none;
+    border-left: none;
     resize: none !important;
   }
+
+  #content_place:hover {
+    background-color: rgb(0, 200, 0);
+    transition: 0.5s;
+  }
+
+  #content_place:hover::placeholder {
+    color: white;
+  }
+
   #content_place:focus {
     background-color: rgb(0, 200, 0);
     color: white;
@@ -95,8 +138,19 @@ textarea {
     padding: 3px 6px 3px 6px;
     color: #e358f7;
     border: 1px solid rgb(0, 0, 0);
+    border-left: none;
     resize: none !important;
   }
+
+  #content_question:hover {
+    background-color: #e358f7;
+    transition: 0.5s;
+  }
+
+  #content_question:hover::placeholder {
+    color: white;
+  }
+
   #content_question:focus {
     background-color: #e358f7;
     color: white;
@@ -111,6 +165,12 @@ textarea {
   color: rgb(0, 0, 0);
   border: 1px solid rgb(0, 0, 0);
   border-top: none;
+}
+
+#btn-submit input:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transition: 0.5s;
 }
 
 
