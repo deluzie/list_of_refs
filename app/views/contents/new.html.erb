@@ -1,32 +1,34 @@
-<% if @content.errors.any? %>
-  <span><% @content.errors.full_messages.each do |message|%>
-  <p><%= message %> !</p>
+<div class="general_content">
+  <% if @content.errors.any? %>
+    <span><% @content.errors.full_messages.each do |message|%>
+    <p><%= message %> !</p>
+    <% end %>
+    </span>
   <% end %>
-  </span>
-<% end %>
 
 
-<%= simple_form_for @content do |f| %>
-  <div>
-    <div class="form-wrapper">
-      <div class="form-input-field publication input-sizer">
-        <%= f.text_area :publication, label: false, placeholder: 'Publications', error: 'Try to think of at least one publication'%>
-      </div>
-      <div class="form-input-field person">
-        <%= f.text_area :person, label: false, placeholder: 'People', error: 'Try to think of at least one person' %>
-      </div>
-      <div class="form-input-field keyword">
-        <%= f.text_area :keyword, label: false, placeholder: 'Topics', error: 'Try to think of at least one keyword' %>
-      </div>
-      <div class="form-input-field place">
-        <%= f.text_area :place, label: false, placeholder: 'Places', error: 'Try to think of at least one place' %>
-      </div>
-      <div class="form-input-field question">
-        <%= f.text_area :question, label: false, placeholder: 'Questions', error: 'Try to ask at least one question' %>
-      <div id="btn-submit">
-        <%= f.submit "Submit"%>
-      </div>
+  <%= simple_form_for @content do |f| %>
+    <div>
+      <div class="form-wrapper">
+        <div class="form-input-field publication input-sizer">
+          <%= f.text_area :publication, label: false, placeholder: 'Publications', error: 'Try to think of at least one publication'%>
+        </div>
+        <div class="form-input-field person">
+          <%= f.text_area :person, label: false, placeholder: 'People', error: 'Try to think of at least one person' %>
+        </div>
+        <div class="form-input-field keyword">
+          <%= f.text_area :keyword, label: false, placeholder: 'Topics', error: 'Try to think of at least one keyword' %>
+        </div>
+        <div class="form-input-field place">
+          <%= f.text_area :place, label: false, placeholder: 'Places', error: 'Try to think of at least one place' %>
+        </div>
+        <div class="form-input-field question">
+          <%= f.text_area :question, label: false, placeholder: 'Questions', error: 'Try to ask at least one question' %>
+        <div id="btn-submit">
+          <%= f.submit "Submit"%>
+        </div>
+        </div>
       </div>
     </div>
-  </div>
-<% end %>
+  <% end %>
+</div>
