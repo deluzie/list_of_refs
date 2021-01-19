@@ -1,0 +1,35 @@
+.form-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-input-field {
+  width: 20%;
+
+  #content_publication {
+    color: blue;
+  }
+
+  #content_person {
+    color: #e8e815;
+  }
+
+  #content_keyword {
+    color: red;
+  }
+
+  #content_place {
+    color: rgb(0, 200, 0);
+  }
+
+  #content_question {
+    color: rgb(0, 0, 0);
+  }
+}
+
+.form-submit-field {
+
+}
+
+
+

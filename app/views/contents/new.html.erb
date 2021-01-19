@@ -1,8 +1,22 @@
-<%= simple_form_for @content do |f| %>
-  <%= f.input :publication %>
-  <%= f.input :person %>
-  <%= f.input :keyword %>
-  <%= f.input :place %>
-  <%= f.input :question %>
-  <%= f.submit "Save"%>
+<%= simple_form_for @content, html: {class: 'general_content'} do |f| %>
+  <div class="form-wrapper">
+    <div class="form-input-field publication">
+    <%= f.input :publication %>
+    </div>
+    <div class="form-input-field person">
+      <%= f.input :person %>
+    </div>
+    <div class="form-input-field keyword">
+      <%= f.input :keyword %>
+    </div>
+    <div class="form-input-field place">
+      <%= f.input :place %>
+    </div>
+    <div class="form-input-field question">
+      <%= f.input :question %>
+    </div>
+    <div class="form-submit-field">
+      <%= f.submit "Save"%>
+    </div>
+  </div>
 <% end %>
