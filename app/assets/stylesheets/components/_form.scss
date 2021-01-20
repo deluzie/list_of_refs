@@ -165,13 +165,34 @@ textarea {
   color: rgb(0, 0, 0);
   border: 1px solid rgb(0, 0, 0);
   border-top: none;
+
+
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  color: transparent;
+  text-shadow: rgb(0, 0, 0) 0 0 10px;
+  transition: 0.4s;
 }
 
 #btn-submit input:hover {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  transition: 0.5s;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  text-shadow: none;
 }
 
+.content-errors {
+  background-color: red;
+  color: white;
+}
 
+.content-wrapper.errors {
+  position: relative;
+  top: 0px;
+  margin: auto;
+
+  ul {
+    display: inline;
+    padding-left: 0px;
+  }
+}
 

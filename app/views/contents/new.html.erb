@@ -1,12 +1,13 @@
 <div class="general_content">
   <% if @content.errors.any? %>
-    <span><% @content.errors.full_messages.each do |message|%>
-    <p><%= message %> !</p>
-    <% end %>
-    </span>
+    <div>
+      <ul class="content-wrapper errors">
+        <% @content.errors.full_messages.each do |message|%>
+        <li class="content-errors"><%= message %>!</li>
+        <% end %>
+      </ul>
+    </div>
   <% end %>
-
-
   <%= simple_form_for @content do |f| %>
     <div>
       <div class="form-wrapper">
