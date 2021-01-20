@@ -28,6 +28,13 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
+$('.button').click(function () {
+    $('.overlay').show();
+})
+$('.close').click(function () {
+    $('.overlay').hide();
+})
+
 
 var autoExpand = function (field) {
 
