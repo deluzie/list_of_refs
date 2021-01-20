@@ -182,53 +182,6 @@ textarea {
   text-shadow: none;
 }
 
-#btn-back a {
-  padding: 0 8px 0 8px;
-  position: relative;
-  top: -1px;
-  float: left;
-  background-color: white;
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(0, 0, 0);
-  border-top: none;
-
-
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  color: transparent;
-  text-shadow: rgb(0, 0, 0) 0 0 10px;
-  transition: 0.4s;
-}
-
-#btn-back a:hover {
-  background-color: white;
-  color: rgb(0, 0, 0);
-  text-shadow: none;
-}
-
-#btn-back-top a {
-  padding: 0 8px 0 8px;
-  position: relative;
-  top: 0px;
-  float: left;
-  background-color: white;
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(0, 0, 0);
-  border-bottom: none;
-
-
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  color: transparent;
-  text-shadow: rgb(0, 0, 0) 0 0 10px;
-  transition: 0.4s;
-}
-
-#btn-back-top a:hover {
-  background-color: white;
-  color: rgb(0, 0, 0);
-  text-shadow: none;
-}
 
 .content-errors {
   background-color: red;
