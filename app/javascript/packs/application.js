@@ -28,12 +28,44 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
-$('.button').click(function () {
+// var buttonClick = function() {
+//   $('.overlay').on("click", ".button", "show")
+// }
+
+// var closeClick = function() {
+//   $('.overlay').on("click", ".close", "hide")
+// }
+
+// function showPopup() {
+//   show('.overlay');
+// }
+
+// function hidePopup() {
+//   hide('.overlay');
+// }
+
+// $(".button").on("click", showPopup)
+// $('.close').on("click", hidePopup)
+
+$(document).ready(function(){
+  $(".button").click(function(){
     $('.overlay').show();
-})
-$('.close').click(function () {
+  });
+});
+
+$(document).ready(function(){
+  $(".close").click(function(){
     $('.overlay').hide();
-})
+  });
+});
+
+
+// $('.button').click(function () {
+//     $('.overlay').show();
+// })
+// $('.close').click(function () {
+//     $('.overlay').hide();
+// })
 
 var autoExpand = function (field) {
 
