@@ -8,6 +8,12 @@
 }
 
 body {
+  @media only screen and (min-width: 1300px) {
+  h1 {
+    font-size: 71px !important;
+  }
+  }
+
   @media only screen and (max-width: 480px) {
   p {
     font-size: 8px !important;
