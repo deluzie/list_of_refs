@@ -1,8 +1,44 @@
 .general_content {
+  overflow: hidden;
   margin: auto;
   width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+body {
+  @media only screen and (max-width: 480px) {
+  p {
+    font-size: 8px !important;
+  }
+
+  h1 {
+    font-size: 16px !important;
+  }
+  .close {
+    font-size: 8px !important;
+  }
+
+  textarea {
+    font-size: 8px !important;
+  }
+
+  .general_content {
+    height: auto;
+  }
+
+  #btn-submit {
+    font-size: 8px !important;
+  }
+
+  .content-errors {
+    font-size: 8px !important;
+  }
+
+  .content-wrapper {
+    font-size: 8px !important;
+  }
+}
 }
