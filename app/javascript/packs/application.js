@@ -35,7 +35,6 @@ $('.close').click(function () {
     $('.overlay').hide();
 })
 
-
 var autoExpand = function (field) {
 
   // Reset field height

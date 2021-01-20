@@ -3,9 +3,10 @@ textarea:focus {
 }
 
 .form-wrapper {
-  height: 20px;
+  width: 100%;
+  padding: 0px;
   display: flex;
-  justify-content: space-between;
+  align-items: flex-start
 }
 
 textarea {
@@ -180,6 +181,7 @@ textarea {
   color: rgb(0, 0, 0);
   text-shadow: none;
 }
+
 
 .content-errors {
   background-color: red;

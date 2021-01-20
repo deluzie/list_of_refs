@@ -64,20 +64,22 @@ html, body {
 }
 
 .button {
-  padding: 8px 12px 8px 8px;
+  padding: 0 8px 0 8px;
   float: top;
   overflow: hidden;
   background:white;
-  border: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-bottom: none;
   text-decoration: none;
-  color: blue;
+  color: rgb(0, 0, 0);
   color: transparent;
-  text-shadow: blue 0 0 10px;
+  text-shadow: rgb(0, 0, 0) 0 0 10px;
   transition: 0.4s;
 }
 
 .button:hover {
-  text-decoration: none !important;
-  color: blue;
+  background-color: white;
+  color: rgb(0, 0, 0);
   text-shadow: none;
 }
+
