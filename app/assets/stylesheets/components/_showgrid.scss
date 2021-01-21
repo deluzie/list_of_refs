@@ -2,47 +2,65 @@
   width: 100%;
   padding: 0px;
   display: flex;
-  align-items: flex-start
+  align-items: flex-start;
 }
 
-li {
-  list-style: none;
+.content {
   width: 20%;
-  padding: 5px;
-  border-collapse: collapse;
-}
-
-.content-publications {
-  background-color: blue;
-  color: white;
+  padding: 3px 6px 3px 6px;
   border: 1px solid black;
   border-right: none;
 }
 
-.content-people {
+li {
+  list-style: none;
+}
+
+.publication {
+  background-color: blue;
+  color: white;
+}
+
+.person {
   background-color: #e8e815;
   color: black;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
 }
 
-.content-keywords {
+.keyword {
   background-color: red;
   color: white;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
 }
 
-.content-places {
+.place {
   background-color: rgb(0, 200, 0);
   color: white;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
 }
 
-.content-questions {
+.question {
   background-color: #e358f7;
   color: white;
-  border: 1px solid black;
-  border-left: none;
+  border-right: 1px solid black !important;
 }
+
+.button_home {
+  padding: 0 8px 0 8px;
+  bottom: 0;
+  float: right;
+
+  overflow: hidden;
+  background:white;
+  border: 1px solid rgb(0, 0, 0);
+  border-bottom: none;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  color: transparent;
+  text-shadow: rgb(0, 0, 0) 0 0 10px;
+  transition: 0.4s;
+}
+
+.button_home:hover {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  text-shadow: none;
+}
+
