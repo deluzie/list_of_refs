@@ -1,19 +1,44 @@
 <div class="general_content">
+  <%= link_to "Home", "/", class: "button_home" %>
+  <div class="content-wrapper">
+    <div class="content publication">
+      <%= @content.publication %>
+    </div>
+    <div class="content person">
+      <%= @content.person %>
+    </div>
+    <div class="content keyword">
+      <%= @content.keyword %>
+    </div>
+    <div class="content place">
+      <%= @content.place %>
+    </div>
+    <div class="content question">
+      <%= @content.question %>
+    </div>
+  </div>
+</div>
+
+<!--
+
+<div class="general_content">
   <ul class="content-wrapper">
-    <li class="content-publications">
+    <li class="content publication">
       <%= @content.publication %>
     </li>
-    <li class="content-people">
+    <li class="content person">
       <%= @content.person %>
     </li>
-    <li class="content-keywords">
+    <li class="content keyword">
       <%= @content.keyword %>
     </li>
-    <li class="content-places">
+    <li class="content place">
       <%= @content.place %>
     </li>
-    <li class="content-questions">
+    <li class="content question">
       <%= @content.question %>
+      <%= link_to "Home", "/", class: "button_home" %>
     </li>
   </ul>
 </div>
+-->
