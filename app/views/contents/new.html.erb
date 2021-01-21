@@ -38,19 +38,19 @@
   <%= simple_form_for @content do |f| %>
     <div>
       <div class="form-wrapper">
-        <div class="form-input-field publication input-sizer">
+        <div class="form-input-field input-sizer">
           <%= f.text_area :publication, label: false, placeholder: 'Publications', error: 'Try to think of at least one publication'%>
         </div>
-        <div class="form-input-field person">
+        <div class="form-input-field">
           <%= f.text_area :person, label: false, placeholder: 'People', error: 'Try to think of at least one person' %>
         </div>
-        <div class="form-input-field keyword">
+        <div class="form-input-field">
           <%= f.text_area :keyword, label: false, placeholder: 'Topics', error: 'Try to think of at least one keyword' %>
         </div>
-        <div class="form-input-field place">
+        <div class="form-input-field">
           <%= f.text_area :place, label: false, placeholder: 'Places', error: 'Try to think of at least one place' %>
         </div>
-        <div class="form-input-field question">
+        <div class="form-input-field">
           <%= f.text_area :question, label: false, placeholder: 'Questions', error: 'Try to ask at least one question' %>
           <div id="btn-submit">
             <%= f.submit "Submit"%>
