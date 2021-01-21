@@ -8,8 +8,8 @@
 .content {
   width: 20%;
   padding: 3px 6px 3px 6px;
-  border: 1px solid black;
-  border-right: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 li {
@@ -19,6 +19,7 @@ li {
 .publication {
   background-color: blue;
   color: white;
+  border-left: 1px solid black;
 }
 
 .person {
@@ -39,7 +40,7 @@ li {
 .question {
   background-color: #e358f7;
   color: white;
-  border-right: 1px solid black !important;
+  border-right: 1px solid black;
 }
 
 .button_home {
@@ -62,5 +63,6 @@ li {
   background-color: white;
   color: rgb(0, 0, 0);
   text-shadow: none;
+  text-decoration: none;
 }
 
