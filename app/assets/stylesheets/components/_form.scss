@@ -184,11 +184,14 @@ textarea {
 
 
 .content-errors {
+  padding-left: 6px;
+  width: 20%;
   background-color: red;
   color: white;
 }
 
 .content-wrapper.errors {
+  display: flex;
   position: relative;
   top: 0px;
   margin: auto;
